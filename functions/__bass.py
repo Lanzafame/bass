@@ -37,7 +37,7 @@ def gen_script():
     old_env = json.loads(old_env)
     new_env = json.loads(new_env)
 
-    skips = ['PS1', 'SHLVL', 'XPC_SERVICE_NAME']
+    skips = ['PS1', 'SHLVL', 'XPC_SERVICE_NAME', '_']
 
     with tempfile.NamedTemporaryFile('w', delete=False) as f:
         for line in stdout.splitlines():
